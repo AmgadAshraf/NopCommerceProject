@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="236.158">
+<testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="27.594">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.result&quot;}&#10;  (Session info: chrome=103.0.5060.134)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.2.2', revision: '683ccb65d6'&#10;System info: host: 'Amgads-MacBook-Air.local', ip: 'fe80:0:0:0:4ca:8980:73b4:48c5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3eec2249ffc0e1702d17720ad6d5d2f8, findElement {using=class name, value=result}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/m4/5_x8fjx1799...}, goog:chromeOptions: {debuggerAddress: localhost:55226}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55226/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3eec2249ffc0e1702d17720ad6d5d2f8" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user go to registeration page.........................................passed
+When user select gender type................................................passed
+And user enter first name "automation" and last name "tester"...............passed
+And user enter date of birth................................................passed
+And user enter email "test@example.com" field...............................passed
+And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".result"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'Amgads-MacBook-Air.local', ip: 'fe80:0:0:0:4ca:8980:73b4:48c5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3eec2249ffc0e1702d17720ad6d5d2f8, findElement {using=class name, value=result}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/m4/5_x8fjx1799...}, goog:chromeOptions: {debuggerAddress: localhost:55226}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55226/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3eec2249ffc0e1702d17720ad6d5d2f8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+	at org.example.stepDefs.D01_registerStepDefs.step8(D01_registerStepDefs.java:76)
+	at ✽.success message is displayed(file:///Users/amgadashraf/Desktop/ud282-master/FinalProject/src/main/resources/features/F01_Registration.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="10.127">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with "valid" "test@example.com" and "P@ssw0rd"..............passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with invalid email and password" time="8.194">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with "invalid" "tesst@example.com" and "P@sssw0rd"..........passed
+And user press on login button..............................................passed
+Then user could not login to the system.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_Currencies | user can change currency to euro" name="guest user can successfully change currency from dollars to euros" time="7.463">
+<system-out><![CDATA[Given user select euro as currency..........................................passed
+Then verify all products price is in euros..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | user can use the search feature" name="user can search using product name" time="7.18">
+<system-out><![CDATA[Given user enter product "book" in search bar and click search button.......passed
+Then "book" products are displayed on webpage...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | user can use the search feature" name="user can search using product name 2" time="7.151">
+<system-out><![CDATA[Given user enter product "laptop" in search bar and click search button.....passed
+Then "laptop" products are displayed on webpage.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | user can use the search feature" name="user can search using product name 3" time="9.485">
+<system-out><![CDATA[Given user enter product "nike" in search bar and click search button.......passed
+Then "nike" products are displayed on webpage...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | user can use the search feature" name="user can search using sku" time="10.156">
+<system-out><![CDATA[Given user enter product "SCI_FAITH" in search bar and click search button..passed
+Then "SCI_FAITH" products are displayed on webpages.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | user can use the search feature" name="user can search using sku 2" time="9.05">
+<system-out><![CDATA[Given user enter product "APPLE_CAM" in search bar and click search button..passed
+Then "APPLE_CAM" products are displayed on webpages.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | user can use the search feature" name="user can search using sku 3" time="10.143">
+<system-out><![CDATA[Given user enter product "SF_PRO_11" in search bar and click search button..passed
+Then "SF_PRO_11" products are displayed on webpages.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="F05_hover | user can use the hover feature" name="user can use the hover feature" time="14.697">
+<failure message="element not interactable&#10;  (Session info: chrome=103.0.5060.134)&#10;Build info: version: '4.2.2', revision: '683ccb65d6'&#10;System info: host: 'Amgads-MacBook-Air.local', ip: 'fe80:0:0:0:4ca:8980:73b4:48c5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4f8ed078a8c15e2f910c24d21501bb21, clickElement {id=916d6509-d25e-4754-bf2b-8114d2523d57}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/m4/5_x8fjx1799...}, goog:chromeOptions: {debuggerAddress: localhost:55428}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55428/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (4f8ed078a8c15e2f910c24d21501bb21)] -&gt; css selector: ul[class=&quot;top-menu notmobile&quot;] &gt; li:nth-child(3) &gt; a[href] + div[class=&quot;sublist-toggle&quot;] + ul[class=&quot;sublist first-level&quot;] &gt; li]&#10;Session ID: 4f8ed078a8c15e2f910c24d21501bb21" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given user select a random category or sub-category and hover over it.......passed
+Then user verify category or sub-category title is equal to the category or sub-category selected.failed
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'Amgads-MacBook-Air.local', ip: 'fe80:0:0:0:4ca:8980:73b4:48c5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f8ed078a8c15e2f910c24d21501bb21, clickElement {id=916d6509-d25e-4754-bf2b-8114d2523d57}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/m4/5_x8fjx1799...}, goog:chromeOptions: {debuggerAddress: localhost:55428}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55428/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (4f8ed078a8c15e2f910c24d21501bb21)] -> css selector: ul[class="top-menu notmobile"] > li:nth-child(3) > a[href] + div[class="sublist-toggle"] + ul[class="sublist first-level"] > li]
+Session ID: 4f8ed078a8c15e2f910c24d21501bb21
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.example.stepDefs.D05_hoverCategoriesStepDefs.step2(D05_hoverCategoriesStepDefs.java:73)
+	at ✽.user verify category or sub-category title is equal to the category or sub-category selected(file:///Users/amgadashraf/Desktop/ud282-master/FinalProject/src/main/resources/features/F05_hoverCategories.feature:6)
+]]></failure>
+</testcase>
+<testcase classname="F06_homeSliders | Sliders is clickable on homepage" name="First slider is clickable on homepage" time="18.674">
+<failure message="Expected condition failed: waiting for url to contain &quot;https://demo.nopcommerce.com/nokia-lumia-1020&quot;. Current url: &quot;https://demo.nopcommerce.com/&quot; (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.2.2', revision: '683ccb65d6'&#10;System info: host: 'Amgads-MacBook-Air.local', ip: 'fe80:0:0:0:4ca:8980:73b4:48c5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/m4/5_x8fjx1799...}, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: de4fb9c263648f4c37e7bf3ce8a25493" type="org.openqa.selenium.TimeoutException"><![CDATA[Given click on first slider.................................................passed
+Then verify first product detail is opened..................................failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "https://demo.nopcommerce.com/nokia-lumia-1020". Current url: "https://demo.nopcommerce.com/" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'Amgads-MacBook-Air.local', ip: 'fe80:0:0:0:4ca:8980:73b4:48c5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/m4/5_x8fjx1799...}, goog:chromeOptions: {debuggerAddress: localhost:55447}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55447/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: de4fb9c263648f4c37e7bf3ce8a25493
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at org.example.stepDefs.D06_homeSlidersStepDefs.first_product_details_opened(D06_homeSlidersStepDefs.java:25)
+	at ✽.verify first product detail is opened(file:///Users/amgadashraf/Desktop/ud282-master/FinalProject/src/main/resources/features/F06_homeSliders.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="F06_homeSliders | Sliders is clickable on homepage" name="Second slider is clickable on homepage" time="22.537">
+<failure message="Expected condition failed: waiting for url to contain &quot;https://demo.nopcommerce.com/iphone-6&quot;. Current url: &quot;https://demo.nopcommerce.com/&quot; (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.2.2', revision: '683ccb65d6'&#10;System info: host: 'Amgads-MacBook-Air.local', ip: 'fe80:0:0:0:4ca:8980:73b4:48c5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/m4/5_x8fjx1799...}, goog:chromeOptions: {debuggerAddress: localhost:55470}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55470/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 40d75ff480e08445368dbfbf4728c67a" type="org.openqa.selenium.TimeoutException"><![CDATA[Given click on second slider................................................passed
+Then verify second product detail is opened.................................failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "https://demo.nopcommerce.com/iphone-6". Current url: "https://demo.nopcommerce.com/" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'Amgads-MacBook-Air.local', ip: 'fe80:0:0:0:4ca:8980:73b4:48c5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/m4/5_x8fjx1799...}, goog:chromeOptions: {debuggerAddress: localhost:55470}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55470/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 40d75ff480e08445368dbfbf4728c67a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at org.example.stepDefs.D06_homeSlidersStepDefs.second_product_details_opened(D06_homeSlidersStepDefs.java:39)
+	at ✽.verify second product detail is opened(file:///Users/amgadashraf/Desktop/ud282-master/FinalProject/src/main/resources/features/F06_homeSliders.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="F07_followUs | users could open followUs links" name="user opens facebook link" time="9.373">
+<system-out><![CDATA[Given user click on facebook icon...........................................passed
+Then facebook website is opened in new tab..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07_followUs | users could open followUs links" name="user opens twitter link" time="8.99">
+<system-out><![CDATA[Given user opens twitter link...............................................passed
+Then twitter website is opened in new tab...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07_followUs | users could open followUs links" name="user opens rss link" time="13.976">
+<failure message="Expected condition failed: waiting for number of open windows to be 2 (tried for 7 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.2.2', revision: '683ccb65d6'&#10;System info: host: 'Amgads-MacBook-Air.local', ip: 'fe80:0:0:0:4ca:8980:73b4:48c5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/m4/5_x8fjx1799...}, goog:chromeOptions: {debuggerAddress: localhost:55556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55556/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 617df8ed2c04dfc30f6c6e69fbcf5d82" type="org.openqa.selenium.TimeoutException"><![CDATA[Given user opens rss link...................................................passed
+Then rss link is opened in new tab..........................................failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number of open windows to be 2 (tried for 7 second(s) with 500 milliseconds interval)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'Amgads-MacBook-Air.local', ip: 'fe80:0:0:0:4ca:8980:73b4:48c5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: /var/folders/m4/5_x8fjx1799...}, goog:chromeOptions: {debuggerAddress: localhost:55556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55556/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 617df8ed2c04dfc30f6c6e69fbcf5d82
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at org.example.stepDefs.D07_followUsStepDefs.step6(D07_followUsStepDefs.java:72)
+	at ✽.rss link is opened in new tab(file:///Users/amgadashraf/Desktop/ud282-master/FinalProject/src/main/resources/features/F07_followUs.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="F07_followUs | users could open followUs links" name="user opens youtube link" time="20.072">
+<system-out><![CDATA[Given user opens youtube link...............................................passed
+Then youtube link is opened in new tab......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F08_Wishlist | user can add products to wishlist" name="user adds product to wishlist" time="8.344">
+<system-out><![CDATA[Given user clicks on wishlist button of a product...........................passed
+Then verify success message appeared........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F08_Wishlist | user can add products to wishlist" name="user checks product is in wishlist tab" time="12.114">
+<system-out><![CDATA[Given user adds product to wishlist and opens wishlist tab..................passed
+Then verify product is in the wishlist tab..................................passed
+]]></system-out>
+</testcase>
+</testsuite>

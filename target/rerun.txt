@@ -1,0 +1,4 @@
+file:src/main/resources/features/F05_hoverCategories.feature:4
+file:src/main/resources/features/F01_Registration.feature:5
+file:src/main/resources/features/F07_followUs.feature:12
+file:src/main/resources/features/F06_homeSliders.feature:4:10
